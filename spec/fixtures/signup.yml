@@ -1,0 +1,28 @@
+- title: Novo cadastro de usuario
+  payload:
+    name: Lucas Serafim
+    email:  "lucas_serafin@gmail.com"
+    password: "pwd123"
+  code: 409
+  error: "Email already exists :("
+
+- title: Nome obrigatório
+  payload:
+    email: "sem_nome_#{Time.now.to_i}@gmail.com"
+    password: "pwd123"
+  code: 412
+  error: "required name"
+
+  -title: Email obrigatório
+  payload:
+    name: Lucas Serafim
+    password: "pwd123"
+  code: 412
+  error: "required email"
+
+- title: Senha obrigatória
+  payload:
+    name: Lucas Serafim
+    email: "sem_senha_#{Time.now.to_i}@gmail.com"
+  code: 412
+  error: "required password"
