@@ -16,7 +16,7 @@ describe "Login API" do
       signup_payload = {
         name: "Lidiane Serafim",
         email: "lidianeaserafim@gmail.com",
-        password: "@Ninguemsabe1"
+        password: "pwd123"
       }
 
       # garante que o usuário está criado
