@@ -1,0 +1,39 @@
+- title: "senha incorreta"
+  payload:
+    email: "lidianeaserafim@gmail.com"
+    password: "@Ninguemsabe"
+  code: 401
+  error: "Unauthorized"
+
+- title: "usuário não existe"
+  payload:
+    email: "404@gmail.com"
+    password: "@Ninguemsabe1"
+  code: 401
+  error: "Unauthorized"
+
+- title: "email em branco"
+  payload:
+    email: ""
+    password: "@Ninguemsabe1"
+  code: 412
+  error: "required email"
+
+- title: "senha em branco"
+  payload:
+    email: "lidianeaserafim@gmail.com"
+    password: ""
+  code: 412
+  error: "required password"
+
+- title: "sem campo email"
+  payload:
+    password: "@Ninguemsabe1"
+  code: 412
+  error: "required email"
+
+- title: "sem campo senha"
+  payload:
+    email: "lidianeaserafim@gmail.com"
+  code: 412
+  error: "required password"

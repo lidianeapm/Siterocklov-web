@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # frozen_string_literal: true
 
 source "https://rubygems.org"
@@ -12,3 +13,10 @@ gem 'faker', '3.5.1'
 gem 'launchy'
 gem 'mongo', '2.21'
 gem 'httparty'
+=======
+source "https://rubygems.org"
+
+gem 'rspec', '3.10'
+gem 'httparty', '0.23.1'
+gem 'mongo', '2.21'
+>>>>>>> c29a13b0cbd4a156a9f40f6de8976177673e6aae
